@@ -16,13 +16,13 @@ function App() {
    
    <BrowserRouter>
 
-   <div className='w-full  mx-[20px]'>
+   <div className=' mx-[20px]'>
     <Navbar />
 
     <Routes>
-      <Route path='/' element={ <Home/>} /> 
-      <Route path='/about-us' element={ <AboutUs/> } /> 
-      <Route path='/contact-us' element={ <ContactUs/> } /> 
+      <Route index element={ <Home title="Home" />} /> 
+      <Route path='/about-us' element={ <AboutUs title="About Us" /> } /> 
+      <Route path='/contact-us' element={ <ContactUs title="Contact "/> } /> 
 
     </Routes>
     </div> 
